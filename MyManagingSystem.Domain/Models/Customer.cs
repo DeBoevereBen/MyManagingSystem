@@ -8,6 +8,9 @@ namespace MyManagingSystem.Domain.Models
 {
     public class Customer
     {
-        
+        public Guid Guid { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Email { get; set; }
     }
 }

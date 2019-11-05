@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyManagingSystem.Domain.Models
 {
-    public class Inventory
+    public class ProductAmount
     {
-        public Guid Guid { get; set; }
-        public List<ProductAmount> ProductAmounts { get; set; }
+        public Guid ProductId { get; set; }
+        public int Amount { get; set; }
     }
 }
