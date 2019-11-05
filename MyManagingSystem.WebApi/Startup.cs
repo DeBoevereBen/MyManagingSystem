@@ -15,6 +15,7 @@ using MyManagingSystem.CustomerService.Customers;
 using Microsoft.OpenApi.Models;
 using MyManagingSystem.ProductService.Products;
 using MyManagingSystem.OrderService.Orders;
+using MyManagingSystem.InventoryService.Inventory;
 
 namespace MyManagingSystem.WebApi
 {
@@ -30,8 +31,11 @@ namespace MyManagingSystem.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // if you have handlers/events in other assemblies
-            services.AddMediatR(typeof(GetProduct).Assembly, typeof(AddToOrder).Assembly);
+            services.AddMediatR(
+                typeof(FindProduct).Assembly,
+                typeof(AddToOrder).Assembly,
+                typeof(CreateNewCustomer).Assembly,
+                typeof(IncreaseAmount).Assembly);
             services.AddControllers();
 
             services.AddSwaggerGen(x =>
@@ -46,7 +50,7 @@ namespace MyManagingSystem.WebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                
+
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
@@ -55,7 +59,7 @@ namespace MyManagingSystem.WebApi
             }
             app.UseHttpsRedirection();
 
-            app.UseRouting();            
+            app.UseRouting();
 
             app.UseAuthorization();
 

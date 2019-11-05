@@ -22,7 +22,7 @@ namespace MyManagingSystem.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProductByGuid(string guid)
         {
-            var p = await _mediator.Send(new GetProduct { ProductGuid = Guid.NewGuid() });
+            var p = await _mediator.Send(new FindProduct { ProductGuid = Guid.NewGuid() });
             return Ok(p);
         }
 

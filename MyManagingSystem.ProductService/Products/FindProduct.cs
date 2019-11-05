@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace MyManagingSystem.ProductService.Products
 {
-    public class GetProduct : IRequest<Product>
+    public class FindProduct : IRequest<Product>
     {
         public Guid Guid { get; set; }
         public Guid ProductGuid { get; set; }
     }
 
-    public class GetProductHandler : IRequestHandler<GetProduct, Product>
+    public class GetProductHandler : IRequestHandler<FindProduct, Product>
     {
-        public async Task<Product> Handle(GetProduct request, CancellationToken cancellationToken)
+        public async Task<Product> Handle(FindProduct request, CancellationToken cancellationToken)
         {
             var p = new Product
             {

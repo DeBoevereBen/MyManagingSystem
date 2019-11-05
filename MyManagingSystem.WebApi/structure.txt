@@ -1,0 +1,28 @@
+﻿- Web
+- Domain
+    - Models
+        - Customer
+        - Product
+        - Inventory
+        - Order
+        - ProductAmount
+- ProductsService
+    - CreateNewProduct
+    - EditNewProduct
+	- FindProduct
+- OrdersService
+    - CreateNewOrder
+    - CreateNewProduct
+	- FindOrder
+- InventoryService
+    - AddToInventory
+    - RemoveFromInventory
+    - IncreaseAmount
+    - DecreaseAmount
+- CustomersService
+    - CreateNewCustomer
+	- FindCustomer
+    - EditCustomer
+
+
+Inventory service apart voor oa stockbeheer
