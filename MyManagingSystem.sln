@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyManagingSystem.OrderServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyManagingSystem.CustomerService", "MyManagingSystem.CustomerService\MyManagingSystem.CustomerService.csproj", "{32F7D2B0-84D6-4108-A8F1-30FE5BF7A148}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyManagingSystem.Web", "MyManagingSystem.Web\MyManagingSystem.Web.fsproj", "{5353D33B-745A-42C7-A262-2920E0A94155}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyManagingSystem.WebApi", "MyManagingSystem.WebApi\MyManagingSystem.WebApi.csproj", "{DBFA08CA-4F9D-44CB-90AF-635EC32E9877}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{32F7D2B0-84D6-4108-A8F1-30FE5BF7A148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32F7D2B0-84D6-4108-A8F1-30FE5BF7A148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32F7D2B0-84D6-4108-A8F1-30FE5BF7A148}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5353D33B-745A-42C7-A262-2920E0A94155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5353D33B-745A-42C7-A262-2920E0A94155}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5353D33B-745A-42C7-A262-2920E0A94155}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5353D33B-745A-42C7-A262-2920E0A94155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFA08CA-4F9D-44CB-90AF-635EC32E9877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFA08CA-4F9D-44CB-90AF-635EC32E9877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFA08CA-4F9D-44CB-90AF-635EC32E9877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFA08CA-4F9D-44CB-90AF-635EC32E9877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
